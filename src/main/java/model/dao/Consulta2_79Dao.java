@@ -42,8 +42,8 @@ public class Consulta2_79Dao {
 
             while(rs.next()){
                 String nombre = rs.getString("Nombre");
-                Integer salario = rs.getInt("Salario");
-                Double deducible = rs.getDouble("deducible");
+                String salario = rs.getString("Salario");
+                String deducible = rs.getString("deducible");
                 String apellidos = rs.getString("apellidos");
                 resultados.add(new Consulta2VO_79(nombre,salario,deducible, apellidos));
             }

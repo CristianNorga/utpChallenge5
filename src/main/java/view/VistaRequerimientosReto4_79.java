@@ -11,55 +11,60 @@ public class VistaRequerimientosReto4_79 {
     public static final ControladorRequerimientosReto4_79 controlador = new ControladorRequerimientosReto4_79();
 
 
-    public static void consulta1(){
+    public static ArrayList<Consulta1VO_79> consulta1(){
         System.out.println("-----Consulta 1-------");
         try{
 
-            ArrayList<Consulta1VO_79> lista = ControladorRequerimientosReto4_79.realizarConsulta1();
+            // ArrayList<Consulta1VO_79> lista = ControladorRequerimientosReto4_79.realizarConsulta1();
+            return ControladorRequerimientosReto4_79.realizarConsulta1();
+
 
             //Encabezado del resultado
-            System.out.println("id_proyecto, Fecha_Inicio , banco_vinculado , serial" );
+            // System.out.println("id_proyecto, Fecha_Inicio , banco_vinculado , serial" );
             
             //Cada VO cargado, mostrarlo en la vista
-            Consulta1VO_79.ImprimirResultados(lista);
+            // Consulta1VO_79.ImprimirResultados(lista);
             
         }catch(SQLException e){
             System.err.println("Ha ocurrido un error!"+e.getMessage());
-        }      
+        }
+        return null;      
     }
 
-    public static void consulta2(){
+    public static ArrayList<Consulta2VO_79> consulta2(){
         System.out.println("-----Consulta 2-------"); 
         try{
 
-            ArrayList<Consulta2VO_79> lista = ControladorRequerimientosReto4_79.realizarConsulta2();
+            return ControladorRequerimientosReto4_79.realizarConsulta2();
 
             //Encabezado del resultado
-            System.out.println("nombre, salario, deducible, apellidos" );
+            // System.out.println("nombre, salario, deducible, apellidos" );
             
             //Cada VO cargado, mostrarlo en la vista
-            Consulta2VO_79.ImprimirResultados(lista);
+            // Consulta2VO_79.ImprimirResultados(lista);
             
         }catch(SQLException e){
             System.err.println("Ha ocurrido un error!"+e.getMessage());
-        }      
+        }
+        return null;      
     }
 
 
-    public static void consulta3(){
+    public static ArrayList<Consulta3VO_79> consulta3(){
         System.out.println("-----Consulta 3-------"); 
         try{
 
-            ArrayList<Consulta3VO_79> lista = ControladorRequerimientosReto4_79.realizarConsulta3();
+            return ControladorRequerimientosReto4_79.realizarConsulta3();
 
             //Encabezado del resultado
-            System.out.println("id_proyecto, nom_ape");
+            // System.out.println("id_proyecto, nom_ape");
             
             //Cada VO cargado, mostrarlo en la vista
-            Consulta3VO_79.ImprimirResultados(lista);
+            // Consulta3VO_79.ImprimirResultados(lista);
             
         }catch(SQLException e){
             System.err.println("Ha ocurrido un error!"+e.getMessage());
-        }      
+        }
+        return null;      
     }
 }

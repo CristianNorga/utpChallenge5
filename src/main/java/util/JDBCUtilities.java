@@ -9,7 +9,7 @@ import java.sql.SQLException;
 public class JDBCUtilities {
 
     //Atributos de clase para gestión de conexión con la base de datos    
-    private static final String UBICACION_BD = "/home/drax/personal/study/utp/challenge4/ProyectosConstruccion.db";    
+    private static final String UBICACION_BD = "C:/Users/crist/OneDrive/Escritorio/study/challenge5/ProyectosConstruccion.db";    
     //private static final String UBICACION_BD = "ProyectosConstruccion.db";    
 
     public static Connection getConnection() throws SQLException {

@@ -6,7 +6,6 @@ import java.util.ArrayList;
 //Librerías para SQL y Base de Datos
 import java.sql.SQLException;
 import java.sql.Connection;
-import java.sql.Date;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 
@@ -43,8 +42,8 @@ public class Consulta1_79Dao {
             rs = pstmt.executeQuery();
 
             while(rs.next()){
-                Integer id_proyecto = rs.getInt("ID_Proyecto");
-                Date fecha_inicio = Date.valueOf( rs.getString("Fecha_Inicio") ) ;
+                String id_proyecto = rs.getString("ID_Proyecto");
+                String fecha_inicio = rs.getString("Fecha_Inicio");
                 String banco_vinculado = rs.getString("Banco_Vinculado");
                 String serial = rs.getString("Serial");
                 resultados.add(new Consulta1VO_79(id_proyecto,fecha_inicio,banco_vinculado, serial));

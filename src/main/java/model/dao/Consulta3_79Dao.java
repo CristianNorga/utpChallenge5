@@ -39,7 +39,7 @@ public class Consulta3_79Dao {
             rs = pstmt.executeQuery();
 
             while(rs.next()){
-                Integer id_proyecto = rs.getInt("ID_Proyecto");
+                String id_proyecto = rs.getString("ID_Proyecto");
                 String nom_ape = rs.getString("nom_ape");
                 resultados.add(new Consulta3VO_79(id_proyecto,nom_ape));
             }
